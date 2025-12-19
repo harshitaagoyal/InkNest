@@ -1,18 +1,9 @@
-InkNest:
-InkNest is a full-stack blogging web application that allows users to create, read, like, comment on, and manage blogs. It supports user authentication, image uploads, and secure data handling with a clean UI and modern backend architecture.
+InkNest is a blogging website where users can add his/her blogs and can comment on other’s blogs also.After logging in, you can add your thoughts on the blog as a comment. You can also LIKE/DISLIKE your post.Author can aslo edit their blog. You can even view your profile and view your contribution. Tech Stack Used- CSS, JavaScript, Nodejs, ejs, MongoDB,Cloudinary,Mongoose,BootStrap.
 
 Live Demo: https://inknest.onrender.com
 
-Features:
-User Authentication (Register / Login / Logout), Create, Edit, Delete Blogs, Like & Dislike Blogs, Comment on Blogs, Image Upload with Cloudinary, User Profiles, Secure Sessions & Input Sanitization, Responsive UI
-
-Tech Stack:
-Frontend,EJS (Embedded JavaScript Templates), Bootstrap, CSS, Backend, Node.js, Express.js, MongoDB & Mongoose, Passport.js (Authentication), Cloud & Tools, MongoDB Atlas, Cloudinary (Image Storage), Multer (File Uploads), Render (Deployment), Git & GitHub
-
 Environment Variables:
-
 Create a .env file in the root directory and add:
-
 MONGODB_URL=your_mongodb_connection_string
 SESSION_SECRET=your_session_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
