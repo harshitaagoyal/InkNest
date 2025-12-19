@@ -1,0 +1,75 @@
+<% layout('/layouts/boilerplate') %>
+<style>
+  body {
+    background-image: url("https://res.cloudinary.com/dtwbilva0/image/upload/v1766130860/add_new_blog_3_bikrvt.avif");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  }
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 0.15rem rgba(0, 128, 0, 0.25);
+  }
+  .col-6.offset-3 {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+  }
+</style>
+<div class="row">
+  <h1 class="text-center">New Blog!</h1>
+  <div class="col-6 offset-3">
+    <form
+      action="/blogs"
+      method="POST"
+      novalidate
+      class="validated-form"
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <label class="form-label" for="title">Title</label>
+        <input
+          class="form-control"
+          type="text"
+          id="title"
+          name="title"
+          required
+        />
+        <div class="valid-feedback">Looks Good!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="shortdescription"
+          >Short_Description</label
+        >
+        <input
+          class="form-control"
+          type="text"
+          id="shortdescription"
+          name="shortdescription"
+          required
+        />
+        <div class="valid-feedback">Looks Good!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="description">Description</label>
+        <textarea
+          class="form-control"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+        <div class="valid-feedback">Looks Good!</div>
+      </div>
+      <div class="mb-3"><input type="file" name="logo" id="" multiple /></div>
+      <button class="btn btn-success">Add BLOG</button>
+      <a href="/blogs"> ALL Blogs!!</a>
+    </form>
+  </div>
+</div>

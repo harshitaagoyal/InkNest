@@ -1,0 +1,91 @@
+<% layout('/layouts/boilerplate') %>
+
+<style>
+  .perfect-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(59, 62, 65, 0.7);
+    transition: transform 0.3s ease;
+  }
+
+  .perfect-circle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.35),
+      0 0 25px rgba(13, 110, 253, 0.25);
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://res.cloudinary.com/dtwbilva0/image/upload/v1766129016/your_profile_iec6j8.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .circle-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .circle-link,
+  .circle-link:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+<br /><br /><br />
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <a href="/yrblogs" class="circle-link">
+        <div class="card mb-4 border-0 perfect-circle">
+          <div class="card-body">
+            <div class="circle-text">YOUR BLOGS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <a href="/likedblogs" class="circle-link">
+        <div class="card mb-4 border-0 perfect-circle">
+          <div class="card-body">
+            <div class="circle-text">BLOGS YOU LIKED</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <a href="/cmtblogs" class="circle-link">
+        <div class="card mb-4 border-0 perfect-circle">
+          <div class="card-body">
+            <div class="circle-text">BLOGS YOU COMMENTED</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
